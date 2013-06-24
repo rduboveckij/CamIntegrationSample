@@ -1,0 +1,5 @@
+<factorypath>
+    <factorypathentry kind="PLUGIN" id="org.eclipse.jst.ws.annotations.core" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ASPECTJRT_LIB" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="EXTJAR" id="C:\Users\rduboveckij\Documents\workspace-sts-3.2.0.M2\androidannotations-2.7.1.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
