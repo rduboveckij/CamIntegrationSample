@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.cwtest11.MainActivity"
+            android:name="edu.kpi.asu.rduboveckij.cam.sample.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name="edu.kpi.asu.rduboveckij.cam.sync.SyncReceiverStart" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="edu.kpi.asu.rduboveckij.cam.sync.SyncReceiverDestroy" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="edu.kpi.asu.rduboveckij.cam.sync.SyncService"
+            android:label="@string/SyncService" >
+        </service>
     </application>
 
 </manifest>
